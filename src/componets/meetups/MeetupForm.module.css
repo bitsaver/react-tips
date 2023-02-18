@@ -1,0 +1,19 @@
+.form {
+    width: 500px;
+}
+
+.form label{
+    display: block;
+    margin-top: 2px;
+}
+
+.form input{
+    display: block;
+
+}
+
+.form button{
+    display: block;
+    margin-top: 2px;
+    align-items: end;
+}

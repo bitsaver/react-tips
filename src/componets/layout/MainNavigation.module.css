@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  background-color: brown;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.title {
+  color: #fff;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.nav ul {
+  height: 30px;
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: medium;
+  color: #fff;
+}
+
+.nav a:hover,
+.nav a:active {
+  font-size: medium;
+  color: aqua;
+}
