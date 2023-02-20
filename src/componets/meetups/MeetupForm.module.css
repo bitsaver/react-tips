@@ -1,5 +1,15 @@
+.formCard{
+    margin: 0 0;
+    width: 500px;
+    padding: 0 200px;
+}
+
+.title{
+    padding: 10px;
+}
 .form {
     width: 500px;
+    padding: 10px;
 }
 
 .form label{
@@ -8,12 +18,11 @@
 }
 
 .form input{
-    display: block;
-
+    width: 460px;
 }
 
-.form button{
-    display: block;
+.button{
+    display: flex;
     margin-top: 2px;
-    align-items: end;
+    text-align: end;
 }

@@ -8,7 +8,7 @@ function MeetupFormPage(props) {
   const imageUrlRef = useRef();
   const descriptionRef = useRef();
 
-  function submitHandler(event){
+  function submitHandler(event) {
     event.preventDefault();
     const titleInput = titleRef.current.value;
     const addressInput = addressRef.current.value;
@@ -16,41 +16,41 @@ function MeetupFormPage(props) {
     const descriptionInput = descriptionRef.current.value;
 
     const meetupItem2 = {
-        title: titleInput,
-        address : addressInput,
-        image: imageInput,
-        description: descriptionInput
-    }
-
+      title: titleInput,
+      address: addressInput,
+      image: imageInput,
+      description: descriptionInput,
+    };
+    props.onAddMeetup(meetupItem2);
     console.log(meetupItem2);
-
-
   }
   return (
-    <Card>
-      <h1>Meetup Form page</h1>
-      <form className={classes.form} onSubmit={submitHandler}>
-        <div>
-          <label htmlFor="title">Titile</label>
-          <input type="text" id="title" ref={titleRef}></input>
-        </div>
-        <div>
-          <label htmlFor="image">Image url</label>
-          <input type="url" id="image" ref={imageUrlRef}></input>
-        </div>
-        <div>
-          <label htmlFor="address">Address</label>
-          <input type="text" id="address"  ref={addressRef}></input>
-        </div>
-        <div>
-          <label htmlFor="description">Description</label>
-          <input type="text" id="description" ref={descriptionRef}></input>
-        </div>
-        <div>
-          <button>Submit</button>
-        </div>
-      </form>
-    </Card>
+    <div className={classes.formCard}>
+      <Card>
+        <h1 className={classes.title} >Add New Meetup</h1>
+        <form className={classes.form} onSubmit={submitHandler}>
+          <div>
+            <label htmlFor="title">Titile</label>
+            <input type="text" id="title" ref={titleRef}></input>
+          </div>
+          <div>
+            <label htmlFor="image">Image url</label>
+            <input type="url" id="image" ref={imageUrlRef}></input>
+          </div>
+          <div>
+            <label htmlFor="address">Address</label>
+            <input type="text" id="address" ref={addressRef}></input>
+          </div>
+          <div>
+            <label htmlFor="description">Description</label>
+            <input type="text" id="description" ref={descriptionRef}></input>
+          </div>
+          <div className={classes.button}>
+            <button>Submit</button>
+          </div>
+        </form>
+      </Card>
+    </div>
   );
 }
 

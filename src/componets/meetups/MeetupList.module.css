@@ -1,3 +1,5 @@
 .list {
-  align-items: center;  
+   list-style: none;
+   padding: 0 200px;
+   width: 400px;
 }
