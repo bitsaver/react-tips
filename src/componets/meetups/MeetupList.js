@@ -7,8 +7,9 @@ function MeetupList(props) {
       {props.data.map((meetup) => (
           <MeetupItem
             key={meetup.id}
+            id={meetup.id}
             image={meetup.image}
-            adddress={meetup.adddress}
+            address={meetup.address}
             description={meetup.description}
             title={meetup.title}
           />

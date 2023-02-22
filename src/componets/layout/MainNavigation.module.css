@@ -34,3 +34,10 @@
   font-size: medium;
   color: aqua;
 }
+
+.favoriteCount{
+  background: coral;
+  border-radius: 5px;
+  padding: 0 8px;
+  margin-left: 4px;
+}

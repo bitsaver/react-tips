@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import MeetupFormPage from "../componets/meetups/MeetupForm";
+import classes from "./NewMeetup.module.css";
 
 function NewMeetupPage() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ function NewMeetupPage() {
   }
 
   return (
-    <div>
+    <div className={classes.container}>
       <MeetupFormPage onAddMeetup={addMeetupHandler}/>
     </div>
   );

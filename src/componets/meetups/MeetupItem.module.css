@@ -5,3 +5,11 @@
     padding: 0;
     border-radius: inherit;
 }
+
+.add_button {
+    background: lime;
+}
+
+.remove_button {
+    background: darkred;
+}
