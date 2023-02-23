@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
   background: antiquewhite;
 }
 
 .title {
+  display: block;
+  margin: 25px 50px;
 }

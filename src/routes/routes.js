@@ -1,6 +1,7 @@
 import AllMeetupsPage from "../pages/AllMeetups";
 import FavoritesPage from "../pages/Favorites";
 import NewMeetupPage from "../pages/NewMeetup";
+import ManagementPage from "../pages/Management";
 
 const routes = [
   {
@@ -10,6 +11,10 @@ const routes = [
   {
     path: "/new-meetup",
     element: <NewMeetupPage />,
+  },
+  {
+    path: "/management",
+    element: <ManagementPage />,
   },
   {
     path: "/favorites",

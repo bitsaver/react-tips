@@ -1,28 +1,49 @@
-.formCard{
+.meetupForm {
     margin: 0 0;
-    width: 500px;
-    padding: 0 200px;
+    width: 100%;
+    height: inherit;
+    background: aquamarine;
+    padding: 0 300px;
 }
 
-.title{
-    padding: 10px;
-}
-.form {
-    width: 500px;
-    padding: 10px;
-}
-
-.form label{
-    display: block;
-    margin-top: 2px;
-}
-
-.form input{
-    width: 460px;
-}
-
-.button{
+.formBox{
     display: flex;
-    margin-top: 2px;
-    text-align: end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.head {
+    margin: 10px 10px;
+}
+
+.form {
+
+}
+
+.form label {
+    display: block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.form input {
+    width: 90%;
+    height: 25px;
+    margin: 2px 30px 10px 30px;
+    border-radius: 3px;
+    border: white hidden;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 18%);
+}
+
+.button {
+    width: 510px;
+    height: 28px;
+    margin: 20px 30px 40px 30px;
+    border-radius: 3px;
+    border: white hidden;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 18%);
+    background: deepskyblue;
 }

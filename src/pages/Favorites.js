@@ -15,7 +15,10 @@ function FavoritesPage() {
 
     return (
         <section className={aclasses.section}>
+            <div>
+                <h1 className={aclasses.title}>My Favorite Meetups</h1>
             {content}
+            </div>
         </section>
     );
 }

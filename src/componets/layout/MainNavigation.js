@@ -17,7 +17,10 @@ function MainNavigation() {
             <Link to="/new-meetup">NewMeetup</Link>
           </li>
           <li>
-            <Link to="/favorites">Favorite</Link><span className={classes.favoriteCount}>{favoritesCtx.totalFavorites}</span>
+            <Link to="/management">Management</Link>
+          </li>
+          <li>
+            <Link to="/favorites">Favorite<span className={classes.favoriteCount}>{favoritesCtx.totalFavorites}</span></Link>
           </li>
         </ul>
       </nav>

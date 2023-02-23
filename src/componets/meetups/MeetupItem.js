@@ -23,13 +23,20 @@ function MeetupItem(props) {
 
 
     return (
-        <li id={props.id}>
+        <li id={props.id} className={classes.item}>
             <Card>
-                <img className={classes.img} alt="loading..." src={props.image}></img>
-                <h3><span>{props.id}</span>{props.title}</h3>
-                <address>{props.address}</address>
-                <p>{props.description}</p>
-                <button onClick={toggleFavoriteHandler} className={isFavorites?classes.remove_button:classes.add_button}>{isFavorites?'Remove from favorites':'Add to favorites'}</button>
+                <div className={classes.img}>
+                    <img className={classes.img} alt="loading..." src={props.image}></img>
+                </div>
+                <div className={classes.text}>
+                    <h3>{props.title}</h3>
+                    <address>{props.address}</address>
+                    <p>{props.description}</p>
+                </div>
+                <div className={classes.button}>
+                    <button type="button" onClick={toggleFavoriteHandler}
+                            className={isFavorites ? classes.remove_button : classes.add_button}>{isFavorites ? 'Remove from favorites' : 'Add to favorites'}</button>
+                </div>
             </Card>
         </li>
     );

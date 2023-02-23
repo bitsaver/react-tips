@@ -1,15 +1,56 @@
+.item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
 .img {
-    width: 100%;
+    width: 400px;
     height: 250px;
-    margin: 0;
-    padding: 0;
     border-radius: inherit;
+    background: gray;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.text {
+    margin: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .add_button {
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 18%);
+    border-radius: 5px;
+    border-color: lime;
     background: lime;
 }
 
+.add_button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border-color: green;
+    background: green;
+}
+
 .remove_button {
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 18%);
+    border-radius: 5px;
+    border-color: red;
+    background: red;
+}
+
+.remove_button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border-color: darkred;
     background: darkred;
 }
